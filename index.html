@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./TableCreator/TableCreator.css" />
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./TableCreator/TableCreator.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+
+    </div>
+
+    <script>
+        $('.container').tableCreator({
+            columns: ["Ad Soyad", "TCKN", "Telefon"],
+            data: [{
+                "name": "Gokhan Turkmen",
+                "tckn": "17451202963",
+                "phone": "5356842365",
+                "birthPlace": "Ankara",
+                "children": [{
+                    "name": "Ayşe Kaya",
+                    "tckn": "24756312486",
+                    "phone": "5555456125",
+                    "birthPlace": "İstanbul"
+                },
+                {
+                    "name": "Tolga Altın",
+                    "tckn": "37456314589",
+                    "phone": "5536985412",
+                    "birthPlace": "İzmir"
+                }
+                ]
+            },
+            {
+                "name": "Merve Altan",
+                "tckn": "14523474621",
+                "phone": "5547456265",
+                "birthPlace": "Muğla",
+                "children": [{
+                    "name": "Sema Patan",
+                    "tckn": "45121647856",
+                    "phone": "5557845630",
+                    "birthPlace": "Sivas"
+                },
+                {
+                    "name": "Ecem Dönmez",
+                    "tckn": "46154862348",
+                    "phone": "5556941236",
+                    "birthPlace": "Ankara"
+                }
+                ]
+            }]
+
+        });
+    </script>
+</body>
+</html>

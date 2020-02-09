@@ -1,0 +1,1 @@
+index.html dosyasını herhangi bir browserda açarak deneyebilirsiniz.
